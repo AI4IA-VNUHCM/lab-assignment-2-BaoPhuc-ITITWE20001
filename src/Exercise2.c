@@ -14,12 +14,23 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[1]) 
+{
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int n = atoi(argv[1]);
-	int result;
+	int num = atoi(argv[1]);
+	int result = 1;
+	int i, j;
 	//Your codes here
-	
+	if (num %2 != 0){
+		for (int i = 1; j<=1; i+=2){
+			result = result * i;
+		} 
+	}
+	else if (num  %2 == 0){
+		for (int i = 2; j<=num; j+=2){
+			result = result * j;
+		}
+	}
 	printf("%d", result);
 	return 0;
 }
